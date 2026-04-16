@@ -7,10 +7,10 @@ class PageController extends Controller
     public function home()
     {
         return view('home', [
-            'expertises' => $this->expertises(),
-            'sectors'    => $this->sectors(),
+            'expertises' => $this->expertiseItems(),
+            'sectors'    => $this->sectorItems(),
             'team'       => $this->teamPreview(),
-            'pubs'       => $this->publications(),
+            'pubs'       => $this->publicationItems(),
         ]);
     }
 
@@ -21,22 +21,22 @@ class PageController extends Controller
 
     public function expertise()
     {
-        return view('expertise', ['expertises' => $this->expertises()]);
+        return view('expertise', ['expertises' => $this->expertiseItems()]);
     }
 
     public function sectors()
     {
-        return view('sectors', ['sectors' => $this->sectors()]);
+        return view('sectors', ['sectors' => $this->sectorItems()]);
     }
 
     public function team()
     {
-        return view('team', ['team' => $this->team()]);
+        return view('team', ['team' => $this->teamMembers()]);
     }
 
     public function publications()
     {
-        return view('publications', ['pubs' => $this->publications()]);
+        return view('publications', ['pubs' => $this->publicationItems()]);
     }
 
     public function contact()
@@ -46,7 +46,7 @@ class PageController extends Controller
 
     /* ---------- Données statiques (à brancher sur DB ensuite) ---------- */
 
-    private function expertises(): array
+    private function expertiseItems(): array
     {
         return [
             [
@@ -72,7 +72,7 @@ class PageController extends Controller
         ];
     }
 
-    private function sectors(): array
+    private function sectorItems(): array
     {
         return [
             [
@@ -98,7 +98,7 @@ class PageController extends Controller
         ];
     }
 
-    private function team(): array
+    private function teamMembers(): array
     {
         return [
             [
@@ -116,10 +116,10 @@ class PageController extends Controller
 
     private function teamPreview(): array
     {
-        return $this->team();
+        return $this->teamMembers();
     }
 
-    private function publications(): array
+    private function publicationItems(): array
     {
         return [
             [
