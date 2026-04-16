@@ -7,7 +7,7 @@ $site = [
     'name' => 'ARIES Investissements',
     'tagline' => 'Conseil financier, investissement et structuration stratégique en Afrique',
     'mission' => 'Faire émerger de nouveaux champions nationaux et régionaux.',
-    'description' => 'ARIES Investissements accompagne investisseurs, institutions et porteurs de projets dans la structuration, le financement et l’exécution d’opérations à fort impact sur le continent africain.',
+    'description' => 'ARIES Investissements conseille investisseurs, institutions et porteurs de projets dans la structuration, le financement et l’exécution d’opérations ambitieuses en Afrique.',
     'email' => 'aries@aries-investissements.com',
     'phones' => [
         ['label' => 'Brazzaville', 'value' => '+242 06 97 99 88 5'],
@@ -17,65 +17,65 @@ $site = [
 ];
 
 $metrics = [
-    ['value' => '2', 'suffix' => ' hubs', 'label' => 'Présences internationales stratégiques'],
-    ['value' => '4', 'suffix' => ' secteurs', 'label' => 'Verticales prioritaires suivies de près'],
-    ['value' => '360', 'suffix' => '°', 'label' => 'Vision globale de l’investissement'],
+    ['value' => '2', 'suffix' => ' pôles', 'label' => 'Brazzaville et Washington pour dialoguer avec les bons décideurs'],
+    ['value' => '4', 'suffix' => ' secteurs', 'label' => 'Verticales où la qualité de structuration change la valeur du projet'],
+    ['value' => '360', 'suffix' => '°', 'label' => 'Lecture croisée du marché, des acteurs, du capital et du risque'],
 ];
 
 $sectors = [
     [
         'name' => 'Infrastructures',
-        'eyebrow' => 'Connectivité & actifs stratégiques',
-        'description' => 'Structuration d’actifs structurants, accompagnement d’opérations complexes et dialogue avec les parties prenantes publiques et privées.',
+        'eyebrow' => 'Actifs stratégiques',
+        'description' => 'Actifs structurants, partenariats publics-privés, opérations complexes et trajectoires de financement lisibles pour les investisseurs.',
     ],
     [
         'name' => 'Immobilier',
         'eyebrow' => 'Développement & valorisation',
-        'description' => 'Conseil sur des projets immobiliers à forte intensité capitalistique, du cadrage stratégique à la recherche d’investisseurs.',
+        'description' => 'Cadrage de projets à forte intensité capitalistique, lecture de marché, sécurisation du montage et recherche de partenaires adaptés.',
     ],
     [
         'name' => 'Agrobusiness',
         'eyebrow' => 'Chaînes de valeur résilientes',
-        'description' => 'Montage d’initiatives agricoles et agro-industrielles capables de combiner rendement, souveraineté et transformation locale.',
+        'description' => 'Initiatives agricoles et agro-industrielles capables d’articuler rendement, souveraineté économique et transformation locale.',
     ],
     [
         'name' => 'Technologie',
         'eyebrow' => 'Croissance & innovation',
-        'description' => 'Accompagnement d’entreprises technologiques et de plateformes en croissance dans leurs stratégies de financement et d’expansion.',
+        'description' => 'Accompagnement de plateformes et entreprises technologiques dans leurs enjeux de financement, d’échelle et de crédibilité stratégique.',
     ],
 ];
 
 $expertises = [
     [
         'title' => 'Conseil stratégique et financier',
-        'description' => 'Cadrage d’opérations, diagnostics de marché, scénarios de croissance, structuration d’options stratégiques et préparation à la décision.',
+        'description' => 'Cadrage d’opérations, diagnostics, scénarios de croissance, options stratégiques et préparation de décisions à fort enjeu.',
     ],
     [
         'title' => 'Financement de projets et levée de fonds',
-        'description' => 'Préparation investisseurs, modélisation, mémorandums, ciblage de partenaires financiers et accompagnement de levées de dette ou fonds propres.',
+        'description' => 'Préparation investisseurs, modélisation, mémorandums, ciblage des bons partenaires et accompagnement de levées de dette ou fonds propres.',
     ],
     [
         'title' => 'Intelligence économique',
-        'description' => 'Analyse d’écosystèmes, cartographie d’acteurs, veille, lecture institutionnelle et appui à la sécurisation d’opérations sensibles.',
+        'description' => 'Analyse d’écosystèmes, cartographie d’acteurs, lecture institutionnelle et appui à la sécurisation d’opérations sensibles.',
     ],
     [
         'title' => 'Structuration et conseil en investissement',
-        'description' => 'Mise en forme de véhicules, structuration de transactions et accompagnement des investisseurs dans leurs déploiements africains.',
+        'description' => 'Structuration de transactions, mise en forme de véhicules et accompagnement des investisseurs dans leurs déploiements africains.',
     ],
 ];
 
 $values = [
     [
         'title' => 'Indépendance',
-        'description' => 'Une lecture libre, rigoureuse et alignée sur les intérêts de long terme de nos clients.',
+        'description' => 'Une lecture libre, rigoureuse et alignée sur les intérêts de long terme de chaque opération.',
     ],
     [
         'title' => 'Professionnalisme',
-        'description' => 'Des méthodes solides, une exécution structurée et un niveau d’exigence institutionnel.',
+        'description' => 'Des méthodes solides, une exécution structurée et un niveau d’exigence compatible avec les meilleures pratiques institutionnelles.',
     ],
     [
         'title' => 'Rigueur',
-        'description' => 'Une attention précise aux données, à la conformité et à la qualité des recommandations formulées.',
+        'description' => 'Une attention constante aux données, à la conformité, à la traçabilité des hypothèses et à la qualité des recommandations.',
     ],
 ];
 
@@ -83,30 +83,30 @@ $team = [
     [
         'name' => 'Loïc Mackosso',
         'role' => 'Associé-Gérant',
-        'bio' => 'Pilote les missions de structuration, de conseil financier et de dialogue stratégique avec les investisseurs et porteurs de projets.',
+        'bio' => 'Pilote les missions de structuration, de conseil financier et de dialogue stratégique avec investisseurs, institutions et porteurs de projets.',
     ],
     [
         'name' => 'Régis Matondo',
         'role' => 'Associé',
-        'bio' => 'Contribue à la lecture sectorielle, à la coordination des opérations et à la construction de trajectoires d’investissement crédibles.',
+        'bio' => 'Contribue à la lecture sectorielle, à la coordination des opérations et à la construction de trajectoires d’investissement crédibles et exécutables.',
     ],
 ];
 
 $publications = [
     [
         'category' => 'Analyse',
-        'title' => 'Investir en Afrique avec méthode',
-        'excerpt' => 'Une approche disciplinée de la sélection d’opportunités, de la lecture pays et de la sécurisation de projets.',
+        'title' => 'Investir en Afrique sans improviser',
+        'excerpt' => 'Une méthode de lecture pays, d’analyse d’acteurs et de sécurisation des projets conçue pour les décisions sérieuses.',
     ],
     [
         'category' => 'Perspective',
-        'title' => 'Capital patient et transformation régionale',
-        'excerpt' => 'Pourquoi les opérations les plus structurantes s’écrivent dans le temps long, avec un fort ancrage local.',
+        'title' => 'Capital patient, impact durable',
+        'excerpt' => 'Les opérations les plus structurantes s’écrivent dans le temps long, avec un fort ancrage local et une discipline de montage.',
     ],
     [
         'category' => 'Marché',
-        'title' => 'Quatre secteurs à fort potentiel',
-        'excerpt' => 'Infrastructure, immobilier, agrobusiness et technologie : quatre terrains d’action où la valeur peut être durablement créée.',
+        'title' => 'Quatre secteurs où la valeur se construit',
+        'excerpt' => 'Infrastructures, immobilier, agrobusiness et technologie : quatre terrains d’action où stratégie et exécution doivent avancer ensemble.',
     ],
 ];
 

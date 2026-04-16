@@ -3,8 +3,8 @@
         <div class="footer-grid">
             <div class="footer-brand reveal">
                 <p class="section-kicker text-gold">ARIES Investissements</p>
-                <h2 class="footer-title">Conseil financier de haut niveau, orienté Afrique.</h2>
-                <p class="footer-copy">{{ $site['description'] }}</p>
+                <h2 class="footer-title">Conseil stratégique, financement et structuration d’investissement en Afrique.</h2>
+                <p class="footer-copy">Une maison de conseil pensée pour les opérations sérieuses, les partenaires exigeants et les trajectoires de croissance durables.</p>
             </div>
 
             <div class="footer-column reveal">
@@ -26,7 +26,7 @@
 
             <div class="footer-column reveal">
                 <h3 class="footer-heading">Newsletter</h3>
-                <p>Recevez nos analyses et points de marché.</p>
+                <p>Recevez nos analyses, perspectives et points de marché.</p>
                 <form class="footer-form">
                     <label class="sr-only" for="footer-email">Adresse e-mail</label>
                     <input id="footer-email" type="email" placeholder="Votre adresse e-mail">
