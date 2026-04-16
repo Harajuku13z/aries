@@ -22,7 +22,7 @@
     <div class="container">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
             @foreach ($team as $m)
-                <x-team-card :name="$m['name']" :role="$m['role']" :bio="$m['bio']" />
+                <x-team-card :name="$m['name']" :role="$m['role']" :bio="$m['bio']" :photo="$m['photo'] ?? null" />
             @endforeach
         </div>
     </div>

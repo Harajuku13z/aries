@@ -105,11 +105,13 @@ class PageController extends Controller
                 'name'  => 'Loïc Mackosso',
                 'role'  => 'Associé-Gérant',
                 'bio'   => 'Vingt ans d’expérience en banque d’affaires et financement de projets sur les marchés africains et internationaux.',
+                'photo' => 'assets/img/team/loic.png',
             ],
             [
                 'name'  => 'Régis Matondo',
                 'role'  => 'Associé',
                 'bio'   => 'Expert en structuration financière et intelligence économique, focus sur les opérations stratégiques en Afrique centrale.',
+                'photo' => 'assets/img/team/regis.png',
             ],
         ];
     }

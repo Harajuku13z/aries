@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#130C05">
     <meta name="description" content="@yield('meta_description', 'ARIES Investissements — société de conseil financier à vocation de banque d’affaires, dédiée à l’accompagnement des projets d’investissement en Afrique.')">
-    <link rel="icon" href="{{ asset('assets/img/logo-aries.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('assets/img/brand/logo-aries-primary.png') }}" type="image/png">
 
     <title>@yield('title', 'ARIES Investissements — Conseil financier & Banque d’affaires')</title>
 
