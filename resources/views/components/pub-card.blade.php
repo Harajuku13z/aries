@@ -1,11 +1,11 @@
 @props(['date' => '', 'tag' => '', 'title' => ''])
 
-<a href="#" class="reveal group block border-t border-ink/15 pt-8 hover:border-gold transition-colors duration-700">
+<a href="#" class="reveal group block border-t border-ink/15 pt-8 transition-colors duration-700 hover:border-gold">
     <div class="flex items-center justify-between mb-8 text-xs uppercase tracking-eyebrow text-ink/55">
         <span>{{ $date }}</span>
         <span class="text-bronze">{{ $tag }}</span>
     </div>
-    <h3 class="font-display text-2xl md:text-[28px] leading-[1.15] text-ink group-hover:text-bronze transition-colors duration-500 mb-10 max-w-md">
+    <h3 class="mb-10 max-w-md font-display text-2xl leading-[1.12] text-ink transition-colors duration-500 group-hover:text-bronze md:text-[30px]">
         {{ $title }}
     </h3>
     <span class="inline-flex items-center gap-2 text-sm text-ink/70">

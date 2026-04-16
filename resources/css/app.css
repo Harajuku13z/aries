@@ -10,6 +10,7 @@
         --color-ink: #130C05;
         --color-gold: #EE9928;
         --color-bone: #F7F3EC;
+        --color-parchment: #F1E8DC;
     }
 
     html {
@@ -20,6 +21,11 @@
 
     body {
         font-feature-settings: "ss01", "ss02", "cv01", "cv11";
+        background:
+            radial-gradient(circle at top left, rgba(238, 153, 40, 0.04), transparent 28%),
+            linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+        position: relative;
+        isolation: isolate;
     }
 
     ::-webkit-scrollbar { width: 8px; height: 8px; }
@@ -30,10 +36,21 @@
     /* Hide Alpine cloak before init */
     [x-cloak] { display: none !important; }
 
-    /* Fraunces optical sizing usage */
     .font-display {
         font-optical-sizing: auto;
-        font-variation-settings: "opsz" 144;
+        font-feature-settings: "liga", "dlig", "kern";
+    }
+
+    body::before {
+        content: "";
+        pointer-events: none;
+        position: fixed;
+        inset: 0;
+        background-image: linear-gradient(rgba(19, 12, 5, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(19, 12, 5, 0.03) 1px, transparent 1px);
+        background-size: 32px 32px;
+        opacity: 0.18;
+        z-index: -1;
     }
 }
 
@@ -62,6 +79,20 @@
         font-style: italic;
         font-feature-settings: "ss01";
     }
+
+    .section-shell {
+        position: relative;
+    }
+
+    .section-shell::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 1px;
+        width: 100%;
+        background: linear-gradient(90deg, rgba(19, 12, 5, 0.12), rgba(19, 12, 5, 0));
+    }
 }
 
 /* ==========================================================================
@@ -70,6 +101,10 @@
 @layer utilities {
     .text-balance { text-wrap: balance; }
     .text-pretty  { text-wrap: pretty; }
+    .mask-fade-bottom {
+        -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+        mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+    }
 }
 
 /* Reduced motion */
