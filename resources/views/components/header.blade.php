@@ -14,16 +14,16 @@
     x-init="window.addEventListener('scroll', () => scrolled = window.scrollY > 32)"
     class="fixed inset-x-0 top-0 z-50"
 >
-    <div class="container">
+    <div class="container px-4 sm:px-6">
         <div
             :class="scrolled ? 'border-white/10 bg-ink/90 backdrop-blur-xl shadow-[0_18px_50px_rgba(0,0,0,0.25)]' : 'border-white/8 bg-ink/72 backdrop-blur-lg shadow-[0_10px_30px_rgba(0,0,0,0.12)]'"
-            class="grid grid-cols-[auto_1fr_auto] items-center gap-6 rounded-b-[1.25rem] border-x border-b px-4 py-4 md:px-5 lg:px-6 transition-all duration-500 ease-out-expo"
+            class="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-b-[1.1rem] border-x border-b px-3 py-3 sm:gap-4 sm:px-4 md:px-5 lg:gap-6 lg:px-6 lg:py-4 transition-all duration-500 ease-out-expo"
         >
             <a href="{{ route('home') }}" class="flex items-center gap-4" aria-label="ARIES Investissements — accueil">
                 <img
                     src="{{ asset('assets/img/brand/logo-aries-primary.png') }}"
                     alt="ARIES Investissements"
-                    class="h-10 w-auto bg-bone px-3 py-2 md:h-11"
+                    class="h-8 w-auto bg-bone px-2.5 py-1.5 sm:h-9 sm:px-3 sm:py-2 md:h-11"
                 >
                 <span class="hidden xl:block text-[11px] uppercase tracking-[0.24em] text-ivory/55">
                     Conseil financier & investissement
@@ -52,7 +52,7 @@
 
             <button
                 @click="open = !open"
-                class="justify-self-end border border-white/10 p-3 text-ivory transition hover:bg-white/5 lg:hidden"
+                class="justify-self-end border border-white/10 p-2.5 text-ivory transition hover:bg-white/5 lg:hidden"
                 :aria-expanded="open"
                 aria-label="Ouvrir le menu"
             >
@@ -69,12 +69,12 @@
             x-transition:enter-end="opacity-100 translate-y-0"
             class="border-x border-b border-white/10 bg-ink/95 backdrop-blur-xl lg:hidden"
         >
-            <nav class="flex flex-col gap-1 p-5">
+            <nav class="flex flex-col gap-1 p-4 sm:p-5">
                 @foreach ($links as $l)
                     @php $active = request()->routeIs($l['route']); @endphp
                     <a
                         href="{{ route($l['route']) }}"
-                        class="border-b border-white/6 px-0 py-4 text-lg {{ $active ? 'text-gold' : 'text-ivory' }}"
+                        class="border-b border-white/6 px-0 py-3.5 text-base sm:text-lg {{ $active ? 'text-gold' : 'text-ivory' }}"
                     >
                         {{ $l['label'] }}
                     </a>

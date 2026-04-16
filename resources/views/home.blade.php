@@ -16,29 +16,29 @@
         <div class="absolute inset-0 bg-grain opacity-50 mix-blend-overlay"></div>
     </div>
 
-    <div class="container relative flex min-h-[100svh] flex-col justify-end pb-10 pt-32 md:pb-14 md:pt-36">
-        <div class="grid gap-12 lg:grid-cols-12 lg:items-end">
+    <div class="container relative flex min-h-[100svh] flex-col justify-end pb-8 pt-24 sm:pb-10 sm:pt-28 md:pb-14 md:pt-36">
+        <div class="grid gap-8 sm:gap-10 lg:grid-cols-12 lg:items-end lg:gap-12">
             <div class="lg:col-span-8">
-                <p class="reveal text-eyebrow uppercase text-gold/80">Conseil financier · Banque d’affaires · Afrique</p>
-                <h1 class="reveal mt-8 max-w-6xl font-display text-display-xl text-balance">
+                <p class="reveal text-[11px] uppercase tracking-[0.2em] text-gold/80 sm:text-eyebrow">Conseil financier · Banque d’affaires · Afrique</p>
+                <h1 class="reveal mt-5 max-w-6xl font-display text-[clamp(2.6rem,12vw,7.25rem)] leading-[0.92] text-balance sm:mt-6">
                     Faire émerger les nouveaux champions africains.
                 </h1>
-                <p class="reveal mt-8 max-w-2xl text-lg leading-relaxed text-ivory/78 md:text-xl">
+                <p class="reveal mt-5 max-w-2xl text-base leading-relaxed text-ivory/78 sm:mt-6 sm:text-lg md:text-xl">
                     ARIES Investissements accompagne dirigeants, investisseurs et porteurs de projets dans leurs décisions stratégiques, leurs opérations de financement et leurs ambitions de croissance sur le continent africain.
                 </p>
-                <div class="reveal mt-10 flex flex-col gap-4 sm:flex-row">
+                <div class="reveal mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
                     <x-cta-button :href="route('presentation')">Découvrir ARIES</x-cta-button>
                     <x-cta-button :href="route('contact')" variant="ghost-light">Parler à un associé</x-cta-button>
                 </div>
             </div>
 
             <div class="reveal lg:col-span-4 lg:pl-10">
-                <div class="border-l border-white/15 pl-6">
+                <div class="border-t border-white/15 pt-5 sm:border-l sm:border-t-0 sm:pl-6 sm:pt-0">
                     <p class="text-[11px] uppercase tracking-[0.22em] text-gold/72">Mission</p>
-                    <p class="mt-4 font-display text-3xl leading-[1.05] text-bone">
+                    <p class="mt-3 font-display text-[1.9rem] leading-[1.05] text-bone sm:mt-4 sm:text-3xl">
                         Faire émerger de nouveaux champions nationaux et régionaux.
                     </p>
-                    <div class="mt-8 space-y-4 text-sm text-ivory/72">
+                    <div class="mt-5 space-y-3 text-sm text-ivory/72 sm:mt-8 sm:space-y-4">
                         <p>Brazzaville · Washington</p>
                         <p>Conseil stratégique, structuration, financement, intelligence économique.</p>
                     </div>
@@ -46,16 +46,16 @@
             </div>
         </div>
 
-        <div class="reveal mt-16 grid gap-px border-t border-white/10 bg-white/10 md:grid-cols-3">
-            <div class="bg-black/20 px-5 py-5 backdrop-blur-sm">
+        <div class="reveal mt-8 grid gap-px border-t border-white/10 bg-white/10 sm:mt-10 md:grid-cols-3">
+            <div class="bg-black/20 px-4 py-4 backdrop-blur-sm sm:px-5 sm:py-5">
                 <p class="text-[11px] uppercase tracking-[0.22em] text-gold/72">Ancrage</p>
                 <p class="mt-2 text-sm text-bone">République du Congo, portée panafricaine</p>
             </div>
-            <div class="bg-black/20 px-5 py-5 backdrop-blur-sm">
+            <div class="bg-black/20 px-4 py-4 backdrop-blur-sm sm:px-5 sm:py-5">
                 <p class="text-[11px] uppercase tracking-[0.22em] text-gold/72">Positionnement</p>
                 <p class="mt-2 text-sm text-bone">Conseil financier à vocation de banque d’affaires</p>
             </div>
-            <div class="bg-black/20 px-5 py-5 backdrop-blur-sm">
+            <div class="bg-black/20 px-4 py-4 backdrop-blur-sm sm:px-5 sm:py-5">
                 <p class="text-[11px] uppercase tracking-[0.22em] text-gold/72">Promesse</p>
                 <p class="mt-2 text-sm text-bone">Vision locale, standards internationaux</p>
             </div>
@@ -63,29 +63,29 @@
     </div>
 </section>
 
-<section class="section-shell bg-bone py-24 md:py-32">
+<section class="section-shell bg-bone py-[4.5rem] md:py-32">
     <div class="container">
-        <div class="mb-14 max-w-4xl">
+        <div class="mb-10 max-w-4xl sm:mb-12 md:mb-14">
             <span class="reveal text-eyebrow uppercase text-bronze">01 — Positionnement</span>
             <h2 class="reveal mt-6 font-display text-display-lg text-balance text-ink">
                 Une maison de conseil pensée pour lire les marchés africains avec précision et accompagner les décisions d’investissement à haut niveau.
             </h2>
         </div>
 
-        <div class="grid gap-5 lg:grid-cols-3">
-            <article class="reveal border border-ink/10 bg-parchment px-6 py-7">
+        <div class="grid gap-4 sm:gap-5 lg:grid-cols-3">
+            <article class="reveal border border-ink/10 bg-parchment px-5 py-6 sm:px-6 sm:py-7">
                 <p class="text-[11px] uppercase tracking-[0.22em] text-bronze">Maîtrise de l’environnement</p>
                 <p class="mt-5 text-lg leading-relaxed text-ink/78">
                     Une compréhension fine des cadres locaux, des rapports d’acteurs et des équilibres sectoriels.
                 </p>
             </article>
-            <article class="reveal border border-ink/10 bg-white px-6 py-7">
+            <article class="reveal border border-ink/10 bg-white px-5 py-6 sm:px-6 sm:py-7">
                 <p class="text-[11px] uppercase tracking-[0.22em] text-bronze">Lecture stratégique</p>
                 <p class="mt-5 text-lg leading-relaxed text-ink/78">
                     Des recommandations claires pour arbitrer, structurer, financer et sécuriser les projets.
                 </p>
             </article>
-            <article class="reveal border border-ink/10 bg-parchment px-6 py-7">
+            <article class="reveal border border-ink/10 bg-parchment px-5 py-6 sm:px-6 sm:py-7">
                 <p class="text-[11px] uppercase tracking-[0.22em] text-bronze">Exécution rigoureuse</p>
                 <p class="mt-5 text-lg leading-relaxed text-ink/78">
                     Une discipline d’exécution sobre, documentée et alignée avec les standards des opérations corporate.
@@ -95,13 +95,13 @@
     </div>
 </section>
 
-<section class="section-shell bg-bone py-24 md:py-32">
-    <div class="container grid gap-14 lg:grid-cols-12 lg:items-start">
+<section class="section-shell bg-bone py-[4.5rem] md:py-32">
+    <div class="container grid gap-8 sm:gap-10 lg:grid-cols-12 lg:items-start lg:gap-14">
         <div class="reveal lg:col-span-5">
             <img
                 src="{{ asset('assets/img/home/pont-vision.jpg') }}"
                 alt="Pont architectural"
-                class="h-[28rem] w-full object-cover"
+                class="h-60 w-full object-cover sm:h-72 lg:h-[28rem]"
             >
         </div>
         <div class="lg:col-span-7 lg:pl-8">
@@ -109,7 +109,7 @@
             <h2 class="reveal mt-6 font-display text-display-md text-balance text-ink">
                 ARIES Investissements accompagne les investisseurs et porteurs de projets en Afrique, du cadrage stratégique à la levée de dette et de fonds propres.
             </h2>
-            <div class="reveal mt-8 grid gap-7 text-base leading-relaxed text-ink/74 md:grid-cols-2 md:text-lg">
+            <div class="reveal mt-6 grid gap-5 text-[15px] leading-relaxed text-ink/74 sm:mt-8 sm:gap-7 md:grid-cols-2 md:text-lg">
                 <p>
                     Notre rôle consiste à apporter la profondeur d’analyse, la rigueur financière et la connaissance des écosystèmes nécessaires à la réussite des projets d’investissement.
                 </p>
@@ -117,7 +117,7 @@
                     Nous nous positionnons à l’intersection du conseil stratégique, du conseil financier, de l’intelligence économique et du conseil en investissement.
                 </p>
             </div>
-            <div class="reveal mt-10">
+            <div class="reveal mt-7 sm:mt-10">
                 <a href="{{ route('presentation') }}" class="group inline-flex items-center gap-3 border-b border-ink/25 pb-2 text-sm text-ink transition-colors hover:border-gold">
                     Lire la présentation
                     <svg class="h-4 w-4 transition-transform duration-500 ease-out-expo group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
@@ -127,10 +127,10 @@
     </div>
 </section>
 
-<section class="section-shell bg-ink py-24 text-bone md:py-32">
+<section class="section-shell bg-ink py-[4.5rem] text-bone md:py-32">
     <div class="absolute inset-0 bg-grain opacity-40 mix-blend-overlay pointer-events-none"></div>
     <div class="container relative">
-        <div class="mb-14 grid gap-10 lg:grid-cols-12 lg:items-end">
+        <div class="mb-10 grid gap-6 sm:mb-12 sm:gap-8 lg:grid-cols-12 lg:items-end lg:gap-10">
             <div class="lg:col-span-8">
                 <x-section-heading
                     eyebrow="03 — Expertise"
@@ -140,7 +140,7 @@
                     Une offre resserrée autour des moments décisifs d’un projet d’investissement.
                 </x-section-heading>
             </div>
-            <div class="reveal lg:col-span-4 lg:justify-self-end">
+            <div class="reveal hidden lg:col-span-4 lg:justify-self-end lg:block">
                 <img
                     src="{{ asset('assets/img/home/sc-4-clic.jpg') }}"
                     alt="Signal lumineux"
@@ -157,9 +157,9 @@
     </div>
 </section>
 
-<section class="section-shell bg-bone py-24 md:py-32">
+<section class="section-shell bg-bone py-[4.5rem] md:py-32">
     <div class="container">
-        <div class="mb-16 grid gap-10 lg:grid-cols-12 lg:items-end">
+        <div class="mb-10 grid gap-6 sm:mb-12 sm:gap-8 lg:grid-cols-12 lg:items-end lg:gap-10">
             <div class="lg:col-span-7">
                 <x-section-heading
                     eyebrow="04 — Secteurs d’activité"
@@ -168,7 +168,7 @@
                     Infrastructures, immobilier, agrobusiness et technologie forment le coeur des marchés sur lesquels nous concentrons notre action.
                 </x-section-heading>
             </div>
-            <div class="lg:col-span-5 lg:pl-8">
+            <div class="hidden lg:col-span-5 lg:block lg:pl-8">
                 <div class="reveal border border-ink/10 bg-parchment p-5 md:p-6">
                     <img
                         src="{{ asset('assets/img/home/pont-vision.jpg') }}"
@@ -187,7 +187,7 @@
             </div>
         </div>
 
-        <div class="grid gap-5 lg:grid-cols-12">
+        <div class="grid gap-4 sm:gap-5 lg:grid-cols-12">
             @foreach ($sectors as $s)
                 <x-sector-tile :number="sprintf('%02d', $loop->iteration)" :name="$s['name']" :desc="$s['desc']" :span="$s['span']" />
             @endforeach
@@ -195,7 +195,7 @@
     </div>
 </section>
 
-<section class="section-shell relative overflow-hidden bg-[#100a05] py-24 text-bone md:py-32">
+<section class="section-shell relative overflow-hidden bg-[#100a05] py-[4.5rem] text-bone md:py-32">
     <div class="absolute inset-0">
         <img
             src="{{ asset('assets/img/home/lion-ambition.jpg') }}"
@@ -206,10 +206,10 @@
         <div class="absolute inset-0 bg-grain opacity-45 mix-blend-overlay"></div>
     </div>
 
-    <div class="container relative grid gap-14 lg:grid-cols-12 lg:items-center">
+    <div class="container relative grid gap-8 sm:gap-10 lg:grid-cols-12 lg:items-center lg:gap-14">
         <div class="lg:col-span-7">
             <span class="reveal text-eyebrow uppercase text-gold/80">05 — Vision & valeurs</span>
-            <p class="reveal mt-7 max-w-4xl font-display text-display-md leading-[1.04] text-balance">
+            <p class="reveal mt-5 max-w-4xl font-display text-[clamp(2rem,7vw,3.7rem)] leading-[1.04] text-balance sm:mt-7">
                 Faire émerger de nouveaux champions nationaux et régionaux, avec l’indépendance du conseil, le professionnalisme de l’exécution et la rigueur de l’analyse.
             </p>
         </div>
@@ -220,9 +220,9 @@
                     'Professionnalisme' => 'Une posture institutionnelle, confidentielle et exigeante à chaque étape.',
                     'Rigueur' => 'Des raisonnements solides, des arbitrages explicites et une vraie discipline analytique.',
                 ] as $k => $v)
-                    <div class="bg-black/25 px-6 py-6 backdrop-blur-sm">
+                    <div class="bg-black/25 px-5 py-5 backdrop-blur-sm sm:px-6 sm:py-6">
                         <p class="text-[11px] uppercase tracking-[0.22em] text-gold/70">0{{ $loop->iteration }}</p>
-                        <h3 class="mt-3 font-display text-3xl text-bone">{{ $k }}</h3>
+                        <h3 class="mt-3 font-display text-[1.9rem] text-bone sm:text-3xl">{{ $k }}</h3>
                         <p class="mt-3 text-sm leading-relaxed text-ivory/72">{{ $v }}</p>
                     </div>
                 @endforeach
@@ -231,9 +231,9 @@
     </div>
 </section>
 
-<section class="section-shell bg-bone py-24 md:py-32">
+<section class="section-shell bg-bone py-[4.5rem] md:py-32">
     <div class="container">
-        <div class="mb-14 grid gap-10 lg:grid-cols-12 lg:items-end">
+        <div class="mb-10 grid gap-6 sm:mb-12 sm:gap-8 lg:grid-cols-12 lg:items-end lg:gap-10">
             <div class="lg:col-span-7">
                 <x-section-heading
                     eyebrow="06 — Direction"
@@ -250,7 +250,7 @@
             </div>
         </div>
 
-        <div class="grid gap-12 md:grid-cols-2 md:gap-16">
+        <div class="grid gap-10 md:grid-cols-2 md:gap-16">
             @foreach ($team as $m)
                 <x-team-card :name="$m['name']" :role="$m['role']" :bio="$m['bio']" :photo="$m['photo'] ?? null" />
             @endforeach
@@ -258,9 +258,9 @@
     </div>
 </section>
 
-<section class="section-shell bg-parchment py-24 md:py-32">
+<section class="section-shell bg-parchment py-[4.5rem] md:py-32">
     <div class="container">
-        <div class="mb-14 flex flex-col gap-10 lg:flex-row lg:items-end lg:justify-between">
+        <div class="mb-10 flex flex-col gap-6 sm:mb-12 sm:gap-8 lg:flex-row lg:items-end lg:justify-between">
             <x-section-heading
                 eyebrow="07 — Publications"
                 title='Analyses, notes sectorielles et prises de position sur les dynamiques d’investissement en Afrique.'
@@ -273,7 +273,7 @@
             </a>
         </div>
 
-        <div class="grid gap-10 md:grid-cols-3 md:gap-12">
+        <div class="grid gap-8 md:grid-cols-3 md:gap-12">
             @foreach ($pubs as $p)
                 <x-pub-card :date="$p['date']" :tag="$p['tag']" :title="$p['title']" />
             @endforeach
@@ -281,32 +281,32 @@
     </div>
 </section>
 
-<section class="section-shell bg-ink py-24 text-bone md:py-32">
-    <div class="container grid gap-14 lg:grid-cols-12 lg:items-center">
+<section class="section-shell bg-ink py-[4.5rem] text-bone md:py-32">
+    <div class="container grid gap-8 sm:gap-10 lg:grid-cols-12 lg:items-center lg:gap-14">
         <div class="lg:col-span-7">
             <span class="reveal text-eyebrow uppercase text-gold/80">08 — Contact</span>
-            <h2 class="reveal mt-6 font-display text-display-lg text-balance">
+            <h2 class="reveal mt-5 font-display text-[clamp(2.1rem,8vw,5.2rem)] leading-[0.98] text-balance sm:mt-6">
                 Ouvrons une conversation confidentielle autour de votre projet.
             </h2>
-            <p class="reveal mt-7 max-w-2xl text-lg leading-relaxed text-ivory/76">
+            <p class="reveal mt-5 max-w-2xl text-[15px] leading-relaxed text-ivory/76 sm:mt-7 sm:text-lg">
                 Nous échangeons avec les dirigeants, investisseurs et porteurs de projets qui recherchent un interlocuteur stratégique pour structurer, financer ou sécuriser une opération en Afrique.
             </p>
-            <div class="reveal mt-10">
+            <div class="reveal mt-7 sm:mt-10">
                 <x-cta-button :href="route('contact')">Prendre contact</x-cta-button>
             </div>
         </div>
 
         <div class="lg:col-span-5">
             <div class="reveal grid gap-px border border-white/10 bg-white/10">
-                <div class="bg-white/5 px-6 py-5">
+                <div class="bg-white/5 px-5 py-4 sm:px-6 sm:py-5">
                     <p class="text-[11px] uppercase tracking-[0.22em] text-gold/72">Brazzaville</p>
                     <p class="mt-2 text-bone">+242 06 97 99 88 5</p>
                 </div>
-                <div class="bg-white/5 px-6 py-5">
+                <div class="bg-white/5 px-5 py-4 sm:px-6 sm:py-5">
                     <p class="text-[11px] uppercase tracking-[0.22em] text-gold/72">Washington</p>
                     <p class="mt-2 text-bone">+1 646 389 14 37</p>
                 </div>
-                <div class="bg-white/5 px-6 py-5">
+                <div class="bg-white/5 px-5 py-4 sm:px-6 sm:py-5">
                     <p class="text-[11px] uppercase tracking-[0.22em] text-gold/72">Adresse</p>
                     <p class="mt-2 leading-relaxed text-ivory/76">9ème niveau, Immeuble ARC, Brazzaville, République du Congo</p>
                 </div>

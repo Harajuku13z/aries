@@ -1,7 +1,7 @@
 @props(['name' => '', 'role' => '', 'bio' => '', 'photo' => null])
 
 <article class="reveal group">
-    <div class="relative aspect-[4/5] overflow-hidden bg-ink">
+    <div class="relative aspect-[4/5] overflow-hidden bg-ink sm:aspect-[4/5]">
         @if ($photo)
             <img
                 src="{{ asset($photo) }}"
@@ -18,15 +18,15 @@
             </div>
         @endif
 
-        <div class="absolute left-6 top-6 inline-flex items-center gap-2 border border-white/15 bg-ink/55 px-3 py-1.5 text-[11px] uppercase tracking-[0.22em] text-bone/85 backdrop-blur-sm">
+        <div class="absolute left-4 top-4 inline-flex items-center gap-2 border border-white/15 bg-ink/55 px-3 py-1.5 text-[10px] uppercase tracking-[0.2em] text-bone/85 backdrop-blur-sm sm:left-6 sm:top-6 sm:text-[11px] sm:tracking-[0.22em]">
             <span class="h-1.5 w-1.5 rounded-full bg-gold"></span>
             Direction
         </div>
     </div>
 
-    <div class="pt-6">
+    <div class="pt-5 sm:pt-6">
         <p class="text-eyebrow uppercase text-bronze mb-2">{{ $role }}</p>
-        <h3 class="font-display text-2xl md:text-3xl text-ink mb-3">{{ $name }}</h3>
+        <h3 class="mb-3 font-display text-[1.8rem] text-ink md:text-3xl">{{ $name }}</h3>
         <p class="text-ink/70 text-[15px] leading-relaxed max-w-md">{{ $bio }}</p>
     </div>
 </article>
