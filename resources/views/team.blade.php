@@ -1,42 +1,29 @@
-@extends('layouts.app')
+<x-layouts.app :page-title="$pageTitle" :page-description="$pageDescription">
+    <section class="inner-hero inner-hero--dense">
+        <div class="container">
+            <p class="section-kicker text-gold reveal">Équipe</p>
+            <h1 class="inner-title reveal">Une direction resserrée, lisible et engagée.</h1>
+            <p class="inner-text reveal">La page équipe s’inscrit dans une logique premium: peu de dispersion, un ton sobre, et une mise en scène qui renforce la crédibilité plus qu’elle ne cherche l’effet.</p>
+        </div>
+    </section>
 
-@section('title', 'Équipe — ARIES Investissements')
-
-@section('content')
-
-<section class="relative pt-40 pb-24 bg-ink text-bone overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-ink via-soot to-espresso"></div>
-    <div class="absolute inset-0 bg-grain opacity-50 mix-blend-overlay"></div>
-    <div class="container relative">
-        <p class="reveal text-eyebrow uppercase text-gold/80">— Équipe</p>
-        <h1 class="reveal mt-8 font-display text-display-xl tracking-tightest leading-[0.95] max-w-5xl">
-            Une direction de <em class="italic text-gold">banque d’affaires</em>.
-        </h1>
-        <p class="reveal mt-10 max-w-2xl text-lg md:text-xl text-ivory/80 leading-relaxed">
-            Des dirigeants expérimentés, à l’intersection des marchés africains et internationaux.
-        </p>
-    </div>
-</section>
-
-<section class="py-24 md:py-32 bg-bone">
-    <div class="container">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
-            @foreach ($team as $m)
-                <x-team-card :name="$m['name']" :role="$m['role']" :bio="$m['bio']" :photo="$m['photo'] ?? null" />
+    <section class="section surface-muted">
+        <div class="container team-grid team-grid--large">
+            @foreach ($team as $member)
+                <x-team-card :member="$member" />
             @endforeach
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="py-24 bg-espresso text-bone relative overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-br from-espresso via-soot to-ink"></div>
-    <div class="absolute inset-0 bg-grain opacity-50 mix-blend-overlay"></div>
-    <div class="container relative max-w-4xl reveal">
-        <span class="text-eyebrow uppercase text-gold/80">— Notre méthode</span>
-        <p class="mt-8 font-display text-display-md leading-[1.1] tracking-tightest">
-            Une équipe restreinte, accessible aux dirigeants, qui prend la responsabilité de chaque dossier de bout en bout.
-        </p>
-    </div>
-</section>
-
-@endsection
+    <section class="section surface-light">
+        <div class="container split-story">
+            <div class="story-block reveal">
+                <h2 class="section-title">Une représentation alignée avec le rôle d’ARIES.</h2>
+                <p class="section-text">Le bloc équipe est volontairement institutionnel. Il ne cherche pas la proximité informelle, mais la confiance, la lisibilité des responsabilités et la qualité d’interlocution.</p>
+            </div>
+            <div class="story-panel reveal">
+                <p>Le site est ainsi prêt à accueillir, plus tard, des portraits, biographies longues, références sectorielles ou interventions publiques sans rompre la cohérence visuelle.</p>
+            </div>
+        </div>
+    </section>
+</x-layouts.app>
