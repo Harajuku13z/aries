@@ -25,7 +25,7 @@
                 <img
                     src="{{ asset('assets/img/brand/logo-aries-primary.png') }}"
                     alt="ARIES Investissements"
-                    class="h-11 w-auto"
+                    class="h-11 w-auto brightness-0 invert"
                 >
                 <p class="mt-6 max-w-sm text-sm leading-relaxed text-ivory/70">
                     Conseil stratégique, structuration et accompagnement des opérations d’investissement en Afrique, avec un niveau d’exigence institutionnel.
