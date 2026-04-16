@@ -169,12 +169,17 @@
                     <p class="mt-5 text-[15px] leading-relaxed text-ink/72 sm:text-base">
                         Infrastructures, immobilier, agrobusiness et technologie forment le coeur des marchés sur lesquels nous concentrons notre action.
                     </p>
-                    <div class="mt-6 overflow-hidden border border-ink/10">
-                        <img
-                            src="{{ asset('assets/img/home/pont-vision.jpg') }}"
-                            alt="Vision d’infrastructure"
-                            class="h-44 w-full object-cover sm:h-52"
-                        >
+                    <div class="mt-6 border-t border-ink/10 pt-5">
+                        <div class="grid gap-3 sm:grid-cols-2">
+                            <div class="border border-ink/10 bg-white px-4 py-4">
+                                <p class="text-[11px] uppercase tracking-[0.22em] text-bronze">Couverture</p>
+                                <p class="mt-3 text-sm leading-relaxed text-ink/72">Des marchés au coeur des infrastructures économiques et des nouvelles capacités régionales.</p>
+                            </div>
+                            <div class="border border-ink/10 bg-white px-4 py-4">
+                                <p class="text-[11px] uppercase tracking-[0.22em] text-bronze">Approche</p>
+                                <p class="mt-3 text-sm leading-relaxed text-ink/72">Une lecture combinée du marché, du financement et de l’exécution des projets.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

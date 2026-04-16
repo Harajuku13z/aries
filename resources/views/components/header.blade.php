@@ -15,15 +15,15 @@
 >
     <div class="container px-4 pt-4 sm:px-6 sm:pt-5">
         <div
-            class="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-[1.1rem] border border-ink/10 bg-white/90 px-3 py-3 shadow-[0_12px_30px_rgba(19,12,5,0.08)] backdrop-blur-md sm:gap-4 sm:px-4 md:px-5 lg:gap-6 lg:px-6 lg:py-4"
+            class="grid grid-cols-[auto_1fr_auto] items-center gap-3 rounded-[1.1rem] border border-white/8 bg-ink px-3 py-3 shadow-[0_16px_36px_rgba(19,12,5,0.2)] sm:gap-4 sm:px-4 md:px-5 lg:gap-6 lg:px-6 lg:py-4"
         >
             <a href="{{ route('home') }}" class="flex items-center gap-4" aria-label="ARIES Investissements — accueil">
                 <img
                     src="{{ asset('assets/img/brand/logo-aries-primary.png') }}"
                     alt="ARIES Investissements"
-                    class="h-8 w-auto bg-bone px-2.5 py-1.5 sm:h-9 sm:px-3 sm:py-2 md:h-11"
+                    class="h-8 w-auto brightness-0 invert sm:h-9 md:h-11"
                 >
-                <span class="hidden xl:block text-[11px] uppercase tracking-[0.24em] text-ink/40">
+                <span class="hidden xl:block text-[11px] uppercase tracking-[0.24em] text-ivory/50">
                     Conseil financier & investissement
                 </span>
             </a>
@@ -33,7 +33,7 @@
                     @php $active = request()->routeIs($l['route']); @endphp
                     <a
                         href="{{ route($l['route']) }}"
-                        class="group relative whitespace-nowrap text-[12px] uppercase tracking-[0.18em] {{ $active ? 'text-ink' : 'text-ink/68' }} transition-colors hover:text-ink"
+                        class="group relative whitespace-nowrap text-[12px] uppercase tracking-[0.18em] {{ $active ? 'text-bone' : 'text-ivory/78' }} transition-colors hover:text-bone"
                     >
                         {{ $l['label'] }}
                         <span class="absolute -bottom-2 left-0 h-px w-full origin-left bg-gold transition-transform duration-500 ease-out-expo {{ $active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}"></span>
@@ -43,14 +43,14 @@
 
             <div class="hidden lg:flex items-center gap-5">
                 <div class="text-right">
-                    <p class="text-[11px] uppercase tracking-[0.22em] text-ink/35">Brazzaville · Washington</p>
-                    <p class="mt-1 text-xs text-ink/58">Afrique · Conseil stratégique · Banque d’affaires</p>
+                    <p class="text-[11px] uppercase tracking-[0.22em] text-ivory/45">Brazzaville · Washington</p>
+                    <p class="mt-1 text-xs text-ivory/68">Afrique · Conseil stratégique · Banque d’affaires</p>
                 </div>
             </div>
 
             <button
                 @click="open = !open"
-                class="justify-self-end border border-ink/10 p-2.5 text-ink transition hover:bg-ink/5 lg:hidden"
+                class="justify-self-end border border-white/10 p-2.5 text-ivory transition hover:bg-white/5 lg:hidden"
                 :aria-expanded="open"
                 aria-label="Ouvrir le menu"
             >
@@ -65,14 +65,14 @@
             x-transition:enter="transition duration-500 ease-out-expo"
             x-transition:enter-start="opacity-0 -translate-y-2"
             x-transition:enter-end="opacity-100 translate-y-0"
-            class="mt-2 rounded-[1rem] border border-ink/10 bg-white shadow-[0_12px_30px_rgba(19,12,5,0.08)] lg:hidden"
+            class="mt-2 rounded-[1rem] border border-white/8 bg-ink shadow-[0_16px_36px_rgba(19,12,5,0.2)] lg:hidden"
         >
             <nav class="flex flex-col gap-1 p-4 sm:p-5">
                 @foreach ($links as $l)
                     @php $active = request()->routeIs($l['route']); @endphp
                     <a
                         href="{{ route($l['route']) }}"
-                        class="border-b border-ink/8 px-0 py-3.5 text-base sm:text-lg {{ $active ? 'text-gold' : 'text-ink' }}"
+                        class="border-b border-white/8 px-0 py-3.5 text-base sm:text-lg {{ $active ? 'text-gold' : 'text-ivory' }}"
                     >
                         {{ $l['label'] }}
                     </a>
