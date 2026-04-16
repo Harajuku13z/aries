@@ -1,0 +1,24 @@
+# -----------------------------------------------------------------------------
+# ARIES Investissements — redirige toutes les requêtes vers /public
+# Utile quand l'hébergement mutualisé utilise la racine du projet comme
+# document root (ex: Hostinger, OVH mutualisé, etc.).
+# -----------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Ne pas réécrire si la requête cible déjà /public/
+    RewriteCond %{REQUEST_URI} !^/public/
+
+    # Fichier ou dossier existe dans /public ? -> rewrite
+    RewriteCond %{DOCUMENT_ROOT}/public/$1 -f [OR]
+    RewriteCond %{DOCUMENT_ROOT}/public/$1 -d
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    # Sinon : tout passer à public/index.php (routes Laravel)
+    RewriteRule ^(.*)$ public/index.php [L,QSA]
+</IfModule>
+
+# Bloquer l'accès aux fichiers sensibles à la racine
+<FilesMatch "^(\.env|\.env\..*|composer\.(json|lock)|package(-lock)?\.json|artisan|README\.md|\.gitignore|\.htaccess)$">
+    Require all denied
+</FilesMatch>
