@@ -16,7 +16,7 @@
         <div class="absolute inset-0 bg-grain opacity-50 mix-blend-overlay"></div>
     </div>
 
-    <div class="container relative flex min-h-[100svh] flex-col justify-end pb-8 pt-24 sm:pb-10 sm:pt-28 md:pb-14 md:pt-36">
+    <div class="container relative flex min-h-[calc(100svh-5rem)] flex-col justify-end pb-8 pt-14 sm:min-h-[calc(100svh-6rem)] sm:pb-10 sm:pt-16 md:pb-14 md:pt-24">
         <div class="grid gap-8 sm:gap-10 lg:grid-cols-12 lg:items-end lg:gap-12">
             <div class="lg:col-span-8">
                 <p class="reveal text-[11px] uppercase tracking-[0.2em] text-gold/80 sm:text-eyebrow">Conseil financier · Banque d’affaires · Afrique</p>
@@ -159,38 +159,33 @@
 
 <section class="section-shell bg-bone py-[4.5rem] md:py-32">
     <div class="container">
-        <div class="mb-10 grid gap-6 sm:mb-12 sm:gap-8 lg:grid-cols-12 lg:items-end lg:gap-10">
-            <div class="lg:col-span-7">
-                <x-section-heading
-                    eyebrow="04 — Secteurs d’activité"
-                    title='Des secteurs structurants pour la transformation économique et la souveraineté du continent.'
-                >
-                    Infrastructures, immobilier, agrobusiness et technologie forment le coeur des marchés sur lesquels nous concentrons notre action.
-                </x-section-heading>
-            </div>
-            <div class="hidden lg:col-span-5 lg:block lg:pl-8">
-                <div class="reveal border border-ink/10 bg-parchment p-5 md:p-6">
-                    <img
-                        src="{{ asset('assets/img/home/pont-vision.jpg') }}"
-                        alt="Vision d’infrastructure"
-                        class="h-48 w-full object-cover md:h-56"
-                    >
-                    <div class="mt-5 flex items-start justify-between gap-6">
-                        <div>
-                            <p class="text-[11px] uppercase tracking-[0.22em] text-bronze">Lecture de marché</p>
-                            <p class="mt-3 text-sm leading-relaxed text-ink/72">
-                                Nous intervenons sur les secteurs qui structurent durablement les économies africaines et concentrent les besoins en conseil stratégique, financement et exécution.
-                            </p>
-                        </div>
+        <div class="mb-10 grid gap-6 sm:mb-12 sm:gap-8 lg:grid-cols-12 lg:items-start lg:gap-10">
+            <div class="lg:col-span-5">
+                <div class="reveal border border-ink/10 bg-parchment p-5 sm:p-6 lg:sticky lg:top-6">
+                    <span class="text-[11px] uppercase tracking-[0.22em] text-bronze">04 — Secteurs d’activité</span>
+                    <h2 class="mt-5 font-display text-[clamp(2rem,5vw,4rem)] leading-[1.02] tracking-tightest text-ink">
+                        Des secteurs structurants pour la transformation économique du continent.
+                    </h2>
+                    <p class="mt-5 text-[15px] leading-relaxed text-ink/72 sm:text-base">
+                        Infrastructures, immobilier, agrobusiness et technologie forment le coeur des marchés sur lesquels nous concentrons notre action.
+                    </p>
+                    <div class="mt-6 overflow-hidden border border-ink/10">
+                        <img
+                            src="{{ asset('assets/img/home/pont-vision.jpg') }}"
+                            alt="Vision d’infrastructure"
+                            class="h-44 w-full object-cover sm:h-52"
+                        >
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="grid gap-4 sm:gap-5 lg:grid-cols-12">
-            @foreach ($sectors as $s)
-                <x-sector-tile :number="sprintf('%02d', $loop->iteration)" :name="$s['name']" :desc="$s['desc']" :span="$s['span']" />
-            @endforeach
+            <div class="lg:col-span-7">
+                <div class="grid gap-4 sm:gap-5 md:grid-cols-2">
+                    @foreach ($sectors as $s)
+                        <x-sector-tile :number="sprintf('%02d', $loop->iteration)" :name="$s['name']" :desc="$s['desc']" :span="$s['span']" />
+                    @endforeach
+                </div>
+            </div>
         </div>
     </div>
 </section>
