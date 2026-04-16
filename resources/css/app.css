@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   ARIES Investissements — Layer base
+   ========================================================================== */
+@layer base {
+    :root {
+        --color-ink: #130C05;
+        --color-gold: #EE9928;
+        --color-bone: #F7F3EC;
+    }
+
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        font-feature-settings: "ss01", "ss02", "cv01", "cv11";
+    }
+
+    ::-webkit-scrollbar { width: 8px; height: 8px; }
+    ::-webkit-scrollbar-track { background: var(--color-bone); }
+    ::-webkit-scrollbar-thumb { background: var(--color-ink); border-radius: 0; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--color-gold); }
+
+    /* Hide Alpine cloak before init */
+    [x-cloak] { display: none !important; }
+
+    /* Fraunces optical sizing usage */
+    .font-display {
+        font-optical-sizing: auto;
+        font-variation-settings: "opsz" 144;
+    }
+}
+
+/* ==========================================================================
+   Components
+   ========================================================================== */
+@layer components {
+    /* Reveal-on-scroll baseline (animated via IntersectionObserver in app.js) */
+    .reveal {
+        opacity: 0;
+        transform: translateY(28px);
+        transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+                    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+        will-change: opacity, transform;
+    }
+    .reveal.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* Slight stagger when reveal blocks share a parent */
+    .reveal.is-visible + .reveal.is-visible { transition-delay: 60ms; }
+
+    /* Editorial decorative italic */
+    em.italic {
+        font-style: italic;
+        font-feature-settings: "ss01";
+    }
+}
+
+/* ==========================================================================
+   Utilities
+   ========================================================================== */
+@layer utilities {
+    .text-balance { text-wrap: balance; }
+    .text-pretty  { text-wrap: pretty; }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
