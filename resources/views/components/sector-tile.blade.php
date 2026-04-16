@@ -1,20 +1,26 @@
-@props(['name' => '', 'desc' => '', 'span' => ''])
+@props(['name' => '', 'desc' => '', 'span' => '', 'number' => ''])
 
-<a href="{{ route('sectors') }}" class="reveal group relative {{ $span }} block min-h-[320px] overflow-hidden bg-ink text-bone p-8 md:p-10">
-    {{-- Grain overlay --}}
-    <span class="absolute inset-0 bg-grain opacity-50 mix-blend-overlay pointer-events-none"></span>
-    {{-- Hover fill --}}
-    <span class="absolute inset-0 bg-gradient-to-br from-mahogany/10 via-espresso/0 to-gold/0 group-hover:from-mahogany/25 group-hover:via-espresso/35 group-hover:to-gold/15 transition-all duration-700"></span>
-
-    <div class="relative z-10 flex flex-col h-full justify-between">
-        <div class="flex items-start justify-between">
-            <span class="text-[11px] uppercase tracking-[0.22em] text-gold/70">Secteur</span>
-            <svg class="w-5 h-5 text-bone/50 group-hover:text-gold group-hover:-translate-y-1 group-hover:translate-x-1 transition-all duration-500 ease-out-expo" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 12L12 4M7 4h5v5"/></svg>
+<a href="{{ route('sectors') }}" class="reveal group {{ $span }} block border border-ink/10 bg-white transition-colors duration-500 hover:border-gold/50">
+    <div class="grid min-h-[280px] grid-cols-1 md:grid-cols-[110px_1fr]">
+        <div class="flex items-start justify-between border-b border-ink/10 bg-parchment px-6 py-6 md:min-h-full md:flex-col md:border-b-0 md:border-r">
+            <span class="text-[11px] uppercase tracking-[0.22em] text-bronze">Secteur</span>
+            <span class="font-display text-4xl leading-none text-gold/80">{{ $number }}</span>
         </div>
 
-        <div class="mt-10">
-            <h3 class="font-display text-[clamp(1.75rem,3vw,2.75rem)] leading-[1.05] tracking-tightest mb-4">{{ $name }}</h3>
-            <p class="text-sm md:text-base text-ivory/70 max-w-lg">{{ $desc }}</p>
+        <div class="flex flex-col justify-between px-6 py-7 md:px-8 md:py-8">
+            <div>
+                <h3 class="font-display text-[clamp(2rem,3.2vw,3rem)] leading-[1.02] tracking-tightest text-ink transition-colors duration-500 group-hover:text-bronze">
+                    {{ $name }}
+                </h3>
+                <p class="mt-5 max-w-xl text-base leading-relaxed text-ink/72 md:text-lg">
+                    {{ $desc }}
+                </p>
+            </div>
+
+            <div class="mt-10 flex items-center justify-between border-t border-ink/10 pt-5">
+                <span class="text-[11px] uppercase tracking-[0.22em] text-ink/42">Marché prioritaire</span>
+                <svg class="h-5 w-5 text-ink/40 transition-all duration-500 ease-out-expo group-hover:translate-x-1 group-hover:text-gold" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
+            </div>
         </div>
     </div>
 </a>

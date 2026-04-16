@@ -78,22 +78,22 @@ class PageController extends Controller
             [
                 'name' => 'Infrastructures',
                 'desc' => 'Énergie, transport, logistique, télécommunications — la colonne vertébrale du continent.',
-                'span' => 'lg:col-span-7 lg:row-span-2',
+                'span' => 'lg:col-span-6',
             ],
             [
                 'name' => 'Immobilier',
                 'desc' => 'Résidentiel premium, tertiaire, hôtellerie : structurer la ville africaine de demain.',
-                'span' => 'lg:col-span-5',
+                'span' => 'lg:col-span-6',
             ],
             [
                 'name' => 'Agrobusiness',
                 'desc' => 'Filières intégrées, transformation locale, sécurité alimentaire et chaînes de valeur exportables.',
-                'span' => 'lg:col-span-5',
+                'span' => 'lg:col-span-6',
             ],
             [
                 'name' => 'Technologie',
                 'desc' => 'Fintech, infrastructures numériques, plateformes B2B : accélérer la souveraineté digitale.',
-                'span' => 'lg:col-span-12',
+                'span' => 'lg:col-span-6',
             ],
         ];
     }

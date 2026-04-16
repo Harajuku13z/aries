@@ -159,18 +159,37 @@
 
 <section class="section-shell bg-bone py-24 md:py-32">
     <div class="container">
-        <div class="mb-14 max-w-4xl">
-            <x-section-heading
-                eyebrow="04 — Secteurs d’activité"
-                title='Des secteurs structurants pour la transformation économique et la souveraineté du continent.'
-            >
-                Infrastructures, immobilier, agrobusiness et technologie forment le coeur des marchés sur lesquels nous concentrons notre action.
-            </x-section-heading>
+        <div class="mb-16 grid gap-10 lg:grid-cols-12 lg:items-end">
+            <div class="lg:col-span-7">
+                <x-section-heading
+                    eyebrow="04 — Secteurs d’activité"
+                    title='Des secteurs structurants pour la transformation économique et la souveraineté du continent.'
+                >
+                    Infrastructures, immobilier, agrobusiness et technologie forment le coeur des marchés sur lesquels nous concentrons notre action.
+                </x-section-heading>
+            </div>
+            <div class="lg:col-span-5 lg:pl-8">
+                <div class="reveal border border-ink/10 bg-parchment p-5 md:p-6">
+                    <img
+                        src="{{ asset('assets/img/home/pont-vision.jpg') }}"
+                        alt="Vision d’infrastructure"
+                        class="h-48 w-full object-cover md:h-56"
+                    >
+                    <div class="mt-5 flex items-start justify-between gap-6">
+                        <div>
+                            <p class="text-[11px] uppercase tracking-[0.22em] text-bronze">Lecture de marché</p>
+                            <p class="mt-3 text-sm leading-relaxed text-ink/72">
+                                Nous intervenons sur les secteurs qui structurent durablement les économies africaines et concentrent les besoins en conseil stratégique, financement et exécution.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="grid gap-5 lg:grid-cols-12 lg:auto-rows-[320px]">
+        <div class="grid gap-5 lg:grid-cols-12">
             @foreach ($sectors as $s)
-                <x-sector-tile :name="$s['name']" :desc="$s['desc']" :span="$s['span']" />
+                <x-sector-tile :number="sprintf('%02d', $loop->iteration)" :name="$s['name']" :desc="$s['desc']" :span="$s['span']" />
             @endforeach
         </div>
     </div>

@@ -5,6 +5,7 @@
         ['route' => 'sectors', 'label' => 'Secteurs'],
         ['route' => 'team', 'label' => 'Équipe'],
         ['route' => 'publications', 'label' => 'Publications'],
+        ['route' => 'contact', 'label' => 'Contact'],
     ];
 @endphp
 
@@ -15,26 +16,26 @@
 >
     <div class="container">
         <div
-            :class="scrolled ? 'border-white/10 bg-ink/88 backdrop-blur-xl shadow-[0_18px_50px_rgba(0,0,0,0.25)]' : 'border-white/6 bg-transparent'"
-            class="grid grid-cols-[auto_1fr_auto] items-center gap-6 border-b py-5 transition-all duration-500 ease-out-expo"
+            :class="scrolled ? 'border-white/10 bg-ink/90 backdrop-blur-xl shadow-[0_18px_50px_rgba(0,0,0,0.25)]' : 'border-white/8 bg-ink/72 backdrop-blur-lg shadow-[0_10px_30px_rgba(0,0,0,0.12)]'"
+            class="grid grid-cols-[auto_1fr_auto] items-center gap-6 rounded-b-[1.25rem] border-x border-b px-4 py-4 md:px-5 lg:px-6 transition-all duration-500 ease-out-expo"
         >
             <a href="{{ route('home') }}" class="flex items-center gap-4" aria-label="ARIES Investissements — accueil">
                 <img
                     src="{{ asset('assets/img/brand/logo-aries-primary.png') }}"
                     alt="ARIES Investissements"
-                    class="h-10 w-auto md:h-11"
+                    class="h-10 w-auto bg-bone px-3 py-2 md:h-11"
                 >
                 <span class="hidden xl:block text-[11px] uppercase tracking-[0.24em] text-ivory/55">
                     Conseil financier & investissement
                 </span>
             </a>
 
-            <nav class="hidden lg:flex items-center justify-center gap-8 xl:gap-11 px-10" aria-label="Navigation principale">
+            <nav class="hidden lg:flex items-center justify-center gap-7 xl:gap-9 px-8 xl:px-10" aria-label="Navigation principale">
                 @foreach ($links as $l)
                     @php $active = request()->routeIs($l['route']); @endphp
                     <a
                         href="{{ route($l['route']) }}"
-                        class="group relative whitespace-nowrap text-[12px] uppercase tracking-[0.18em] {{ $active ? 'text-bone' : 'text-ivory/72' }} transition-colors hover:text-bone"
+                        class="group relative whitespace-nowrap text-[12px] uppercase tracking-[0.18em] {{ $active ? 'text-bone' : 'text-ivory/82' }} transition-colors hover:text-bone"
                     >
                         {{ $l['label'] }}
                         <span class="absolute -bottom-2 left-0 h-px w-full origin-left bg-gold transition-transform duration-500 ease-out-expo {{ $active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100' }}"></span>
@@ -47,13 +48,6 @@
                     <p class="text-[11px] uppercase tracking-[0.22em] text-ivory/45">Brazzaville · Washington</p>
                     <p class="mt-1 text-xs text-ivory/70">Afrique · Conseil stratégique · Banque d’affaires</p>
                 </div>
-                <a
-                    href="{{ route('contact') }}"
-                    class="group inline-flex items-center gap-3 border border-gold/45 bg-gold px-5 py-3 text-sm font-semibold text-ink transition-all duration-500 hover:border-bone hover:bg-bone"
-                >
-                    Nous contacter
-                    <svg class="h-4 w-4 transition-transform duration-500 ease-out-expo group-hover:translate-x-1" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 8h12M9 3l5 5-5 5"/></svg>
-                </a>
             </div>
 
             <button
